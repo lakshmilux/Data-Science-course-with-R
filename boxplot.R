@@ -1,0 +1,7 @@
+library(ggplot2)
+d = read.csv(file.choose())
+ggplot(d,aes(x = Partner,y = tenure))+geom_boxplot(fill = "violet",col = "snow3")
+ggplot(d,aes(x = MultipleLines,y = tenure,fill = Partner))+geom_boxplot()
+ggplot(d,aes(x = MultipleLines,y = tenure,fill = PhoneService))+geom_boxplot()
+ggplot(d,aes(x = Contract,y = tenure,fill = InternetService))+geom_boxplot()
+ggplot(d,aes(x = Contract,y = tenure,fill = PaymentMethod))+geom_boxplot()

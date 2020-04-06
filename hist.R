@@ -1,0 +1,7 @@
+library(ggplot2)
+attach(d)
+ggplot(d,aes(x = tenure))+geom_histogram(bins = 100,fill = "mediumspringgreen",col = "azure")
+ggplot(d,aes(x = MonthlyCharges,fill = PaymentMethod))+geom_histogram()
+ggplot(d,aes(x = MonthlyCharges,fill = OnlineBackup))+geom_histogram()
+ggplot(d,aes(x = TotalCharges,fill = gender))+geom_histogram(na.rm = T)
+ggplot(d,aes(x = TotalCharges,fill = InternetService))+geom_histogram(position = "stack")

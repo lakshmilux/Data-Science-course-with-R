@@ -1,0 +1,6 @@
+library(plotly)
+plot_ly(d,x = tenure,type = "histogram",color = ~ gender)
+plot_ly(d,x = tenure,type = "histogram",color = ~ PaymentMethod)
+plot_ly(d,x = MonthlyCharges,y = tenure,mode = "markers",color = ~ InternetService)
+plot_ly(d,x = MonthlyCharges,y = tenure,color = ~ Contract,type = "scatter",mode = "markers")
+plot_ly(d,x = MultipleLines,y = tenure,type = "box",color = ~Dependents)

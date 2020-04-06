@@ -1,0 +1,7 @@
+ggplot(d,aes(y = TotalCharges,x = tenure))+geom_point(col = "wheat3")
+ggplot(d,aes(y = TotalCharges,x = tenure,col = PaymentMethod))+geom_point()
+ggplot(d,aes(y = TotalCharges,x = tenure,col = gender))+geom_point()
+ggplot(d,aes(y = TotalCharges,x = tenure,col = Dependents,shape = Dependents))+geom_point()
+ggplot(d,aes(x = TotalCharges,y = tenure))+geom_point(col = "yellowgreen")
+ggplot(d,aes(y = TotalCharges,x = tenure,col = InternetService))+geom_point()
+ggplot(d,aes(y = TotalCharges,x = tenure,col = Contract))+geom_point()
